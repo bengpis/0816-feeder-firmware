@@ -1,7 +1,7 @@
 <openpnp-machine>
    <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0" auto-tool-select="true" safe-Z-park="true">
       <axes>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a361acbe0" name="x" type="X" driver-id="DRV183b9c9a35f9b6bc" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a361acbe0" name="x" type="X" driver-id="DRV183b9c9a35f9b6bc" letter="B" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
@@ -10,10 +10,10 @@
             <soft-limit-high value="0.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
-            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
-            <jerk-per-second-3 value="0.0" units="Millimeters"/>
-            <resolution>1.0E-4</resolution>
+            <feedrate-per-second value="200.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="1000.0" units="Millimeters"/>
+            <jerk-per-second-3 value="30000.0" units="Millimeters"/>
+            <resolution>0.05625</resolution>
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a3627d81c" name="y" type="Y" driver-id="DRV183b9c9a35f9b6bc" letter="Y" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -24,10 +24,10 @@
             <soft-limit-high value="0.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
+            <feedrate-per-second value="1000.0" units="Millimeters"/>
             <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
-            <resolution>1.0E-4</resolution>
+            <resolution>0.01</resolution>
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceVirtualAxis" id="AXS183b9c9a362f4160" name="zTop" type="Z">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -47,7 +47,7 @@
             <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
             <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
-            <resolution>1.0E-4</resolution>
+            <resolution>0.01</resolution>
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a363213a4" name="C" type="Rotation" driver-id="DRV183b9c9a35f9b6bc" letter="A" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="true" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -397,15 +397,15 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV183b9c9a35f9b6bc" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV183b9c9a35f9b6bc" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
             <serial line-ending-type="LF" port-name="COM7" baud="250000" flow-control="RtsCts" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="GcodeServer" port="50043" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.0.x (Apr 29 2025 14:53:13) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:3D Printer EXTRUDER_COUNT:0 AXIS_COUNT:4 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
-            <reported-axes><![CDATA[X:0.00 Y:0.00 Z:200.00 A:0.00 Count X:0 Y:0 Z:20000 A:0]]></reported-axes>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.1.x (May  5 2025 14:02:25) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:3D Printer KINEMATICS:Cartesian EXTRUDER_COUNT:0 AXIS_COUNT:5 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
+            <reported-axes><![CDATA[X:0.00 Y:0.00 Z:0.00 A:0.00 B:0.00 Count X:0 Y:0 Z:0 A:0 B:0]]></reported-axes>
             <command head-mountable-id="ACT183b9cad0136e16c" type="ACTUATE_BOOLEAN_COMMAND">
-               <text><![CDATA[M42 P9 S{True:255}{False:0}]]></text>
+               <text><![CDATA[{True:M106}{False:M106 S0}]]></text>
             </command>
             <command head-mountable-id="AP1" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[M42 P9 S{True:255}{False:0}]]></text>
@@ -420,7 +420,7 @@
                <text><![CDATA[^ok.*]]></text>
             </command>
             <command type="POSITION_REPORT_REGEX">
-               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+)\s*Y:(?<Y>-?\d+\.\d+)\s*Z:(?<Z>-?\d+\.\d+)\s*A:(?<A>-?\d+\.\d+).*]]></text>
+               <text><![CDATA[^.*Y:(?<Y>-?\d+\.\d+)\s*Z:(?<Z>-?\d+\.\d+)\s*A:(?<A>-?\d+\.\d+)\s*B:(?<B>-?\d+\.\d+).*]]></text>
             </command>
             <command type="CONNECT_COMMAND">
                <text><![CDATA[G21 ; Set millimeters mode ]]></text>
@@ -431,14 +431,14 @@
                <text><![CDATA[G28 ; Home all axes]]></text>
             </command>
             <command type="SET_GLOBAL_OFFSETS_COMMAND">
-               <text><![CDATA[G92 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} ; reset coordinates]]></text>
+               <text><![CDATA[G92 {B:B%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} ; reset coordinates]]></text>
             </command>
             <command type="GET_POSITION_COMMAND">
                <text><![CDATA[M114 ; get position]]></text>
             </command>
             <command type="MOVE_TO_COMMAND">
-               <text><![CDATA[{Acceleration:M204 S%.0f }]]></text>
-               <text><![CDATA[G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {FeedRate:F%.0f} ; move to target]]></text>
+               <text><![CDATA[{Acceleration:M204 S%.1f }]]></text>
+               <text><![CDATA[G1 {B:B%.2f} {Y:Y%.2f} {Z:Z%.2f} {A:A%.4f} {FeedRate:F%.0f} ; move to target]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
                <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
@@ -463,8 +463,8 @@
                <text><![CDATA[M610 S{True:1}{False:0}]]></text>
             </command>
             <command head-mountable-id="actAutoFeeder4mm" type="ACTUATE_DOUBLE_COMMAND">
-               <text><![CDATA[M600 N{IntegerValue} F4]]></text>
-               <text><![CDATA[M601 N{IntegerValue}]]></text>
+               <text><![CDATA[M600 N32 F4]]></text>
+               <text><![CDATA[M601 N32]]></text>
             </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
@@ -557,8 +557,13 @@
       <auto-load-most-recent-job>false</auto-load-most-recent-job>
       <solutions show-indicator="true" target-milestone="Kinematics">
          <dismissed-solutions class="java.util.HashSet">
+            <string>99bb720e8375c9272ba65b5c6a9b9f8ac9765287</string>
             <string>97e05b84ebaba14892e195242db3796f998b55ae</string>
             <string>c48cc2e68f3b29aeb3ea84a6aeec372738051e74</string>
+            <string>d338c4ff6729eb296a06729eaebbb4cb5f96dfe1</string>
+            <string>12d332c9a91eaedf04b96c8c427cdc2e686c8453</string>
+            <string>461358f0c1ee3eec2d7480bdcc48abb41752b12c</string>
+            <string>5ff676ecaed8eb4307570fed651650bd84514816</string>
             <string>980c6a806cd988b2a79f872aaa6e46b3eb01dea2</string>
             <string>5d0f78f6e03b6c8e4c394025950ba329fbc5bb17</string>
          </dismissed-solutions>
