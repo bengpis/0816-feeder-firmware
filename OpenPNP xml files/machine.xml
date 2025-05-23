@@ -1,33 +1,209 @@
 <openpnp-machine>
    <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0" auto-tool-select="true" safe-Z-park="true">
       <axes>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a361acbe0" name="x" type="X" driver-id="DRV183b9c9a35f9b6bc" letter="B" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
-            <home-coordinate value="0.0" units="Millimeters"/>
-            <acceptable-tolerance value="0.025" units="Millimeters"/>
-            <backlash-offset value="0.0" units="Millimeters"/>
-            <sneak-up-offset value="0.0" units="Millimeters"/>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a361acbe0" name="X" type="X" driver-id="DRV183b9c9a35f9b6bc" letter="B" backlash-compensation-method="DirectionalSneakUp" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="290.057" units="Millimeters"/>
+            <acceptable-tolerance value="0.05625" units="Millimeters"/>
+            <backlash-offset value="0.12002743484225675" units="Millimeters"/>
+            <sneak-up-offset value="0.4500000000000002" units="Millimeters"/>
             <soft-limit-low value="0.0" units="Millimeters"/>
-            <soft-limit-high value="0.0" units="Millimeters"/>
+            <soft-limit-high value="290.06" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="200.0" units="Millimeters"/>
-            <acceleration-per-second-2 value="1000.0" units="Millimeters"/>
-            <jerk-per-second-3 value="30000.0" units="Millimeters"/>
+            <feedrate-per-second value="100.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="2000.0" units="Millimeters"/>
+            <jerk-per-second-3 value="2000.0" units="Millimeters"/>
             <resolution>0.05625</resolution>
+            <step-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="false" zero-nano-time="-9223372036854775808" last-t="0">
+               <data-scale label="E" label-shown="false" relative-padding-top="0.0" relative-padding-bottom="0.2" logarithmic="false" symmetric-if-signed="true" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="A" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                     <xy-values length="34">2.0, -0.003763717421122692, 3.0, 0.0010459533608013771, 4.0, 0.023002400548705282, 5.0, 0.019238683127639433, 6.0, 0.015474965706459898, 7.0, 0.011711248285337206, 8.0, -6.258573387754041E-4, 9.0, 0.05562414266120186, 10.0, 0.01756687242800581, 11.0, 0.030949931412919796, 12.0, 0.0529063786008237, 13.0, 0.04056927297671109, 14.0, 0.01965877914955172, 15.0, 0.02446844993147579, 16.0, 0.012131344307306335, 17.0, 0.01694101508917356, 18.0, 0.02175068587109763</xy-values>
+                  </data-row>
+                  <data-row label="R" marker-shown="true" line-shown="false" display-cycle-mask="1">
+                     <color r="0" g="91" b="217" a="255"/>
+                     <xy-values length="34">2.0, -0.003763717421122692, 3.0, 0.004809670781924069, 4.0, 0.021956447187903905, 5.0, -0.0037637174210658486, 6.0, -0.0037637174211795354, 7.0, -0.003763717421122692, 8.0, -0.01233710562411261, 9.0, 0.05624999999997726, 10.0, -0.03805727023319605, 11.0, 0.013383058984913987, 12.0, 0.021956447187903905, 13.0, -0.01233710562411261, 14.0, -0.02091049382715937, 15.0, 0.004809670781924069, 16.0, -0.012337105624169453, 17.0, 0.004809670781867226, 18.0, 0.004809670781924069</xy-values>
+                  </data-row>
+                  <data-row label="AR" marker-shown="true" line-shown="false" display-cycle-mask="1">
+                     <color r="187" g="119" b="0" a="255"/>
+                     <xy-values length="18">2.0, -0.011316872427926228, 4.0, 0.024022633744891664, 6.0, 0.01649519890264628, 8.0, -0.008179012345692627, 10.0, 0.13004115226340218, 12.0, -0.014660493827136634, 14.0, -0.030761316872371935, 16.0, -0.04686213991766408, 18.0, -0.06296296296295623</xy-values>
+                  </data-row>
+                  <data-row label="L0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="34">2.0, -0.05625, 3.0, -0.05625, 4.0, -0.05625, 5.0, -0.05625, 6.0, -0.05625, 7.0, -0.05625, 8.0, -0.05625, 9.0, -0.05625, 10.0, -0.05625, 11.0, -0.05625, 12.0, -0.05625, 13.0, -0.05625, 14.0, -0.05625, 15.0, -0.05625, 16.0, -0.05625, 17.0, -0.05625, 18.0, -0.05625</xy-values>
+                  </data-row>
+                  <data-row label="L1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="34">2.0, 0.05625, 3.0, 0.05625, 4.0, 0.05625, 5.0, 0.05625, 6.0, 0.05625, 7.0, 0.05625, 8.0, 0.05625, 9.0, 0.05625, 10.0, 0.05625, 11.0, 0.05625, 12.0, 0.05625, 13.0, 0.05625, 14.0, 0.05625, 15.0, 0.05625, 16.0, 0.05625, 17.0, 0.05625, 18.0, 0.05625</xy-values>
+                  </data-row>
+               </data-scale>
+            </step-test-graph>
+            <backlash-distance-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="true" zero-nano-time="-9223372036854775808" last-t="0">
+               <data-scale label="S" label-shown="false" relative-padding-top="0.0" relative-padding-bottom="0.55" logarithmic="false" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="B0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="91" b="217" a="255"/>
+                     <xy-values length="26">0.11250000000001137, 0.368655692729817, 0.22500000000002274, -0.16289437585737687, 0.31819805153395464, 0.3772290809327501, 0.44999999999998863, 0.1714677640603668, 0.6363961030679093, 0.10288065843622007, 0.8999999999999773, 0.0857338820301834, 1.272792206135776, 0.11145404663920999, 1.8000000000000114, 0.09430727023323016, 2.5455844122715803, 0.11145404663920999, 3.6000000000000085, 0.11145404663920999, 5.0911688245431606, 0.09430727023323016, 7.200000000000003, 0.12002743484225675, 145.03, -0.3343621399176868</xy-values>
+                  </data-row>
+                  <data-row label="O0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                     <xy-values length="26">0.11250000000001137, -0.09859396433472511, 0.22500000000002274, -0.1843278463648801, 0.31819805153395464, -0.12431412894375171, 0.44999999999998863, 0.0428669410150917, 0.6363961030679093, 0.02143347050756006, 0.8999999999999773, 0.021433470507531638, 1.272792206135776, 0.0300068587105784, 1.8000000000000114, 0.0300068587105784, 2.5455844122715803, 0.0300068587105784, 3.6000000000000085, 0.01714677640603668, 5.0911688245431606, 0.02143347050756006, 7.200000000000003, 0.03429355281207336, 145.03, 0.03429355281207336</xy-values>
+                  </data-row>
+                  <data-row label="B1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="91" b="217" a="128"/>
+                     <xy-values length="24">0.11250000000001137, -0.0, 0.22500000000002274, 0.4200960219478702, 0.31819805153395464, 0.01714677640603668, 0.44999999999998863, 0.06858710562414672, 0.6363961030679093, 0.07716049382713663, 0.8999999999999773, 0.10288065843622007, 1.272792206135776, 0.07716049382719348, 1.8000000000000114, 0.07716049382719348, 2.5455844122715803, 0.07716049382713663, 3.6000000000000085, 0.10288065843622007, 5.0911688245431606, 0.11145404663926683, 7.200000000000003, 0.11145404663920999</xy-values>
+                  </data-row>
+                  <data-row label="O1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="128"/>
+                     <xy-values length="24">0.11250000000001137, 0.0857338820301834, 0.22500000000002274, -0.10716735253771503, 0.31819805153395464, 0.09002057613170678, 0.44999999999998863, 0.0428669410150917, 0.6363961030679093, 0.0428669410150917, 0.8999999999999773, 0.047153635116586656, 1.272792206135776, 0.03429355281207336, 1.8000000000000114, 0.03429355281207336, 2.5455844122715803, 0.02572016460905502, 3.6000000000000085, 0.03429355281207336, 5.0911688245431606, 0.0300068587105784, 7.200000000000003, 0.03858024691359674</xy-values>
+                  </data-row>
+                  <data-row label="L0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="6">0.4500000000000002, 0.0, 0.4500000100000002, 0.05896776406036679, 2.5, 0.05896776406036679</xy-values>
+                  </data-row>
+                  <data-row label="L1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="6">0.4500000000000002, 0.05896776406036679, 0.4500000100000002, 0.1714677640603668, 2.5, 0.1714677640603668</xy-values>
+                  </data-row>
+                  <data-row label="AR" marker-shown="true" line-shown="false" display-cycle-mask="1">
+                     <color r="187" g="119" b="0" a="255"/>
+                     <xy-values length="18">0.12667121224893707, -0.06296296296295623, 0.2608479398328827, 0.13004115226340218, 0.29482394135829226, -0.04686213991766408, 0.316092409190597, 0.024022633744891664, 2.755600072744238, 0.01649519890264628, 5.287706261538573, -0.014660493827136634, 6.098762069960442, -0.030761316872371935, 6.721852124599842, -0.011316872427926228, 16.7046055333322, -0.008179012345692627</xy-values>
+                  </data-row>
+               </data-scale>
+               <data-scale label="T" label-shown="false" relative-padding-top="0.55" relative-padding-bottom="0.1" logarithmic="true" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="T0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="255"/>
+                     <xy-values length="26">0.11250000000001137, 0.017653200004133396, 0.22500000000002274, 0.018488999994588085, 0.31819805153395464, 0.25444920000154525, 0.44999999999998863, 0.27436860000307206, 0.6363961030679093, 0.3010798000032082, 0.8999999999999773, 0.32371909999346826, 1.2727922061357901, 0.3561436000018148, 1.8000000000000114, 0.3875637999881292, 2.5455844122715803, 0.4176341999991564, 3.5999999999999943, 0.47286809999786783, 5.0911688245431606, 0.5206239999970421, 7.200000000000017, 0.5750860999978613, 257.0054814814814, 3.155895599993528</xy-values>
+                  </data-row>
+                  <data-row label="T1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="128"/>
+                     <xy-values length="26">0.11250000000001137, 0.018159100000048056, 0.22500000000002274, 0.020847799998591654, 0.31819805153395464, 0.01763629999186378, 0.44999999999998863, 0.27374620000773575, 0.6363961030679093, 0.27877030000672676, 0.8999999999999773, 0.3239049999974668, 1.2727922061357617, 0.3517108000087319, 1.8000000000000114, 0.38925860000017565, 2.5455844122715803, 0.4455879999877652, 3.6000000000000227, 0.47228880001057405, 5.0911688245431606, 0.5255056000023615, 7.199999999999989, 0.576630199997453, 33.05451851851859, 0.8995596000022488</xy-values>
+                  </data-row>
+               </data-scale>
+            </backlash-distance-test-graph>
+            <backlash-speed-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="false" zero-nano-time="-9223372036854775808" last-t="0">
+               <data-scale label="S" label-shown="false" relative-padding-top="0.0" relative-padding-bottom="0.2" logarithmic="false" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="B" marker-shown="true" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                     <xy-values length="10">0.25, 0.08487654320985599, 0.33, 0.09259259259259807, 0.5, 0.061728395061680895, 0.75, 0.08487654320990715, 1.0, 0.1697530864197631</xy-values>
+                  </data-row>
+               </data-scale>
+               <data-scale label="V" label-shown="false" relative-padding-top="0.1" relative-padding-bottom="0.2" logarithmic="false" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <data-row label="V0" marker-shown="true" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="255"/>
+                     <xy-values length="10">0.25, 0.3250771622861676, 0.33, 0.4010681987604902, 0.5, 0.5688835154175325, 0.75, 0.7960261475683472, 1.0, 0.9987200036614944</xy-values>
+                  </data-row>
+                  <data-row label="V1" marker-shown="true" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="128"/>
+                     <xy-values length="10">0.25, 0.3250541454071593, 0.33, 0.4046328645799079, 0.5, 0.5690906472808296, 0.75, 0.7959749639647445, 1.0, 0.9995749068064325</xy-values>
+                  </data-row>
+               </data-scale>
+            </backlash-speed-test-graph>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a3627d81c" name="y" type="Y" driver-id="DRV183b9c9a35f9b6bc" letter="Y" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
-            <home-coordinate value="0.0" units="Millimeters"/>
-            <acceptable-tolerance value="0.025" units="Millimeters"/>
-            <backlash-offset value="0.0" units="Millimeters"/>
-            <sneak-up-offset value="0.0" units="Millimeters"/>
-            <soft-limit-low value="0.0" units="Millimeters"/>
-            <soft-limit-high value="0.0" units="Millimeters"/>
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a3627d81c" name="Y" type="Y" driver-id="DRV183b9c9a35f9b6bc" letter="Y" backlash-compensation-method="DirectionalSneakUp" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+            <home-coordinate value="94.5" units="Millimeters"/>
+            <acceptable-tolerance value="0.020039843150447316" units="Millimeters"/>
+            <backlash-offset value="0.050099607876120444" units="Millimeters"/>
+            <sneak-up-offset value="0.22672494376953742" units="Millimeters"/>
+            <soft-limit-low value="94.5" units="Millimeters"/>
+            <soft-limit-high value="260.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="1000.0" units="Millimeters"/>
-            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
-            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <feedrate-per-second value="10.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="1000.0" units="Millimeters"/>
+            <jerk-per-second-3 value="10000.0" units="Millimeters"/>
             <resolution>0.01</resolution>
+            <step-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="false" zero-nano-time="-9223372036854775808" last-t="0">
+               <data-scale label="E" label-shown="false" relative-padding-top="0.0" relative-padding-bottom="0.2" logarithmic="false" symmetric-if-signed="true" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="A" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                     <xy-values length="98">2.0, -0.020039843150470915, 3.0, -0.020039843150470915, 4.0, -0.020039843150442493, 5.0, 0.0, 6.0, -0.020039843150442493, 7.0, -0.020039843150470915, 8.0, -0.020039843150470915, 9.0, -2.842170943040401E-14, 10.0, -0.020039843150442493, 11.0, 0.0, 12.0, -0.020039843150442493, 13.0, 0.0, 14.0, -0.020039843150470915, 15.0, -0.020039843150470915, 16.0, -0.020039843150442493, 17.0, 0.0, 18.0, 0.0, 19.0, -0.020039843150470915, 20.0, -0.020039843150470915, 21.0, -2.842170943040401E-14, 22.0, -0.020039843150442493, 23.0, -0.020039843150442493, 24.0, -0.020039843150442493, 25.0, 0.0, 26.0, -2.842170943040401E-14, 27.0, -0.020039843150470915, 28.0, 0.0, 29.0, 0.0, 30.0, 0.0, 31.0, -0.020039843150470915, 32.0, -2.842170943040401E-14, 33.0, -2.842170943040401E-14, 34.0, 0.0, 35.0, -0.020039843150442493, 36.0, 0.0, 37.0, -2.842170943040401E-14, 38.0, -0.020039843150470915, 39.0, -0.020039843150470915, 40.0, 0.0, 41.0, 0.0, 42.0, 0.0, 43.0, -0.020039843150470915, 44.0, -2.842170943040401E-14, 45.0, -2.842170943040401E-14, 46.0, -0.020039843150442493, 47.0, -0.020039843150442493, 48.0, 0.0, 49.0, -2.842170943040401E-14, 50.0, -0.020039843150470915</xy-values>
+                  </data-row>
+                  <data-row label="R" marker-shown="true" line-shown="false" display-cycle-mask="1">
+                     <color r="0" g="91" b="217" a="255"/>
+                     <xy-values length="98">2.0, -0.020039843150470915, 3.0, 0.0, 4.0, 2.842170943040401E-14, 5.0, 0.020039843150442493, 6.0, -0.020039843150442493, 7.0, -2.842170943040401E-14, 8.0, 0.0, 9.0, 0.020039843150442493, 10.0, -0.02003984315041407, 11.0, 0.020039843150442493, 12.0, -0.020039843150442493, 13.0, 0.020039843150442493, 14.0, -0.020039843150470915, 15.0, 0.0, 16.0, 2.842170943040401E-14, 17.0, 0.020039843150442493, 18.0, 0.0, 19.0, -0.020039843150470915, 20.0, 0.0, 21.0, 0.020039843150442493, 22.0, -0.02003984315041407, 23.0, 0.0, 24.0, 0.0, 25.0, 0.020039843150442493, 26.0, -2.842170943040401E-14, 27.0, -0.020039843150442493, 28.0, 0.020039843150470915, 29.0, 0.0, 30.0, 0.0, 31.0, -0.020039843150470915, 32.0, 0.020039843150442493, 33.0, 0.0, 34.0, 2.842170943040401E-14, 35.0, -0.020039843150442493, 36.0, 0.020039843150442493, 37.0, -2.842170943040401E-14, 38.0, -0.020039843150442493, 39.0, 0.0, 40.0, 0.020039843150470915, 41.0, 0.0, 42.0, 0.0, 43.0, -0.020039843150470915, 44.0, 0.020039843150442493, 45.0, 0.0, 46.0, -0.02003984315041407, 47.0, 0.0, 48.0, 0.020039843150442493, 49.0, -2.842170943040401E-14, 50.0, -0.020039843150442493</xy-values>
+                  </data-row>
+                  <data-row label="AR" marker-shown="true" line-shown="false" display-cycle-mask="1">
+                     <color r="187" g="119" b="0" a="255"/>
+                     <xy-values length="50">2.0, -0.01904376438926647, 4.0, 9.960787611476007E-4, 6.0, 9.960787611760225E-4, 8.0, 9.960787611760225E-4, 10.0, 9.960787611476007E-4, 12.0, 9.960787611760225E-4, 14.0, 9.960787611760225E-4, 16.0, 9.960787611476007E-4, 18.0, 9.960787611760225E-4, 20.0, -0.039083607539737386, 22.0, -0.019043764389294893, 24.0, -0.039083607539708964, 26.0, 9.960787611760225E-4, 28.0, 9.960787611476007E-4, 30.0, 9.960787611760225E-4, 32.0, -0.039083607539737386, 34.0, -0.019043764389294893, 36.0, 9.960787611760225E-4, 38.0, -0.019043764389294893, 40.0, -0.019043764389294893, 42.0, -0.01904376438926647, 44.0, -0.019043764389294893, 46.0, -0.019043764389294893, 48.0, 9.960787611760225E-4, 50.0, 9.960787611760225E-4</xy-values>
+                  </data-row>
+                  <data-row label="L0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="98">2.0, -0.020039843150447316, 3.0, -0.020039843150447316, 4.0, -0.020039843150447316, 5.0, -0.020039843150447316, 6.0, -0.020039843150447316, 7.0, -0.020039843150447316, 8.0, -0.020039843150447316, 9.0, -0.020039843150447316, 10.0, -0.020039843150447316, 11.0, -0.020039843150447316, 12.0, -0.020039843150447316, 13.0, -0.020039843150447316, 14.0, -0.020039843150447316, 15.0, -0.020039843150447316, 16.0, -0.020039843150447316, 17.0, -0.020039843150447316, 18.0, -0.020039843150447316, 19.0, -0.020039843150447316, 20.0, -0.020039843150447316, 21.0, -0.020039843150447316, 22.0, -0.020039843150447316, 23.0, -0.020039843150447316, 24.0, -0.020039843150447316, 25.0, -0.020039843150447316, 26.0, -0.020039843150447316, 27.0, -0.020039843150447316, 28.0, -0.020039843150447316, 29.0, -0.020039843150447316, 30.0, -0.020039843150447316, 31.0, -0.020039843150447316, 32.0, -0.020039843150447316, 33.0, -0.020039843150447316, 34.0, -0.020039843150447316, 35.0, -0.020039843150447316, 36.0, -0.020039843150447316, 37.0, -0.020039843150447316, 38.0, -0.020039843150447316, 39.0, -0.020039843150447316, 40.0, -0.020039843150447316, 41.0, -0.020039843150447316, 42.0, -0.020039843150447316, 43.0, -0.020039843150447316, 44.0, -0.020039843150447316, 45.0, -0.020039843150447316, 46.0, -0.020039843150447316, 47.0, -0.020039843150447316, 48.0, -0.020039843150447316, 49.0, -0.020039843150447316, 50.0, -0.020039843150447316</xy-values>
+                  </data-row>
+                  <data-row label="L1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="98">2.0, 0.020039843150447316, 3.0, 0.020039843150447316, 4.0, 0.020039843150447316, 5.0, 0.020039843150447316, 6.0, 0.020039843150447316, 7.0, 0.020039843150447316, 8.0, 0.020039843150447316, 9.0, 0.020039843150447316, 10.0, 0.020039843150447316, 11.0, 0.020039843150447316, 12.0, 0.020039843150447316, 13.0, 0.020039843150447316, 14.0, 0.020039843150447316, 15.0, 0.020039843150447316, 16.0, 0.020039843150447316, 17.0, 0.020039843150447316, 18.0, 0.020039843150447316, 19.0, 0.020039843150447316, 20.0, 0.020039843150447316, 21.0, 0.020039843150447316, 22.0, 0.020039843150447316, 23.0, 0.020039843150447316, 24.0, 0.020039843150447316, 25.0, 0.020039843150447316, 26.0, 0.020039843150447316, 27.0, 0.020039843150447316, 28.0, 0.020039843150447316, 29.0, 0.020039843150447316, 30.0, 0.020039843150447316, 31.0, 0.020039843150447316, 32.0, 0.020039843150447316, 33.0, 0.020039843150447316, 34.0, 0.020039843150447316, 35.0, 0.020039843150447316, 36.0, 0.020039843150447316, 37.0, 0.020039843150447316, 38.0, 0.020039843150447316, 39.0, 0.020039843150447316, 40.0, 0.020039843150447316, 41.0, 0.020039843150447316, 42.0, 0.020039843150447316, 43.0, 0.020039843150447316, 44.0, 0.020039843150447316, 45.0, 0.020039843150447316, 46.0, 0.020039843150447316, 47.0, 0.020039843150447316, 48.0, 0.020039843150447316, 49.0, 0.020039843150447316, 50.0, 0.020039843150447316</xy-values>
+                  </data-row>
+               </data-scale>
+            </step-test-graph>
+            <backlash-distance-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="true" zero-nano-time="-9223372036854775808" last-t="0">
+               <data-scale label="S" label-shown="false" relative-padding-top="0.0" relative-padding-bottom="0.55" logarithmic="false" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="B0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="91" b="217" a="255"/>
+                     <xy-values length="32">0.04007968630088499, 0.10019921575224089, 0.0801593726017984, 0.0601195294513559, 0.11336247188475568, 0.04007968630088499, 0.16031874520356837, 0.0801593726017984, 0.22672494376953978, 0.0801593726017984, 0.32063749040716516, 0.04007968630088499, 0.45344988753907955, 0.06011952945132748, 0.6412749808143019, 0.06011952945132748, 0.9068997750781591, 0.06011952945132748, 1.2825499616286322, 0.04007968630088499, 1.8137995501562898, 0.04007968630088499, 2.5650999232572644, 0.06011952945132748, 3.627599100312608, 0.04007968630088499, 5.130199846514529, 0.04007968630088499, 7.255198200625216, 0.04007968630088499, 82.75, 0.06011952945132748</xy-values>
+                  </data-row>
+                  <data-row label="O0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                     <xy-values length="32">0.04007968630088499, -0.020039843150456704, 0.0801593726017984, 0.03005976472567795, 0.11336247188475568, 0.03005976472567795, 0.16031874520356837, 0.03005976472567795, 0.22672494376953978, 0.03005976472567795, 0.32063749040716516, 0.03005976472567795, 0.45344988753907955, 0.03005976472567795, 0.6412749808143019, 0.03005976472567795, 0.9068997750781591, 0.03005976472567795, 1.2825499616286322, 0.03005976472567795, 1.8137995501562898, 0.03005976472567795, 2.5650999232572644, 0.020039843150456704, 3.627599100312608, 0.03005976472567795, 5.130199846514529, 0.03005976472567795, 7.255198200625216, 0.020039843150456704, 82.75, 0.020039843150456704</xy-values>
+                  </data-row>
+                  <data-row label="B1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="91" b="217" a="128"/>
+                     <xy-values length="30">0.04007968630088499, -0.0, 0.0801593726017984, 0.020039843150442493, 0.11336247188475568, 0.020039843150442493, 0.16031874520356837, 0.04007968630088499, 0.22672494376953978, 0.020039843150442493, 0.32063749040716516, 0.020039843150442493, 0.45344988753907955, 0.020039843150442493, 0.6412749808143019, 0.04007968630088499, 0.9068997750781591, 0.04007968630088499, 1.2825499616286322, 0.020039843150442493, 1.8137995501562898, 0.020039843150442493, 2.5650999232572644, 0.020039843150442493, 3.627599100312608, 0.020039843150442493, 5.130199846514529, 0.020039843150442493, 7.255198200625216, 0.04007968630088499</xy-values>
+                  </data-row>
+                  <data-row label="O1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="128"/>
+                     <xy-values length="30">0.04007968630088499, 0.0400796863008992, 0.0801593726017984, 0.03005976472567795, 0.11336247188475568, 0.0400796863008992, 0.16031874520356837, 0.03005976472567795, 0.22672494376953978, 0.03005976472567795, 0.32063749040716516, 0.03005976472567795, 0.45344988753907955, 0.03005976472567795, 0.6412749808143019, 0.03005976472567795, 0.9068997750781591, 0.0400796863008992, 1.2825499616286322, 0.0400796863008992, 1.8137995501562898, 0.020039843150456704, 2.5650999232572644, 0.03005976472567795, 3.627599100312608, 0.03005976472567795, 5.130199846514529, 0.03005976472567795, 7.255198200625216, 0.03005976472567795</xy-values>
+                  </data-row>
+                  <data-row label="L0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="6">0.22672494376953742, 0.0, 0.2267249537695374, 0.040079686300903763, 2.5, 0.040079686300903763</xy-values>
+                  </data-row>
+                  <data-row label="L1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="0" b="119" a="255"/>
+                     <xy-values length="6">0.22672494376953742, 0.040079686300903763, 0.2267249537695374, 0.0801593726017984, 2.5, 0.0801593726017984</xy-values>
+                  </data-row>
+                  <data-row label="AR" marker-shown="true" line-shown="false" display-cycle-mask="1">
+                     <color r="187" g="119" b="0" a="255"/>
+                     <xy-values length="50">0.026580992038905352, 9.960787611760225E-4, 0.03270562092374264, 9.960787611760225E-4, 0.045979248010400875, 9.960787611760225E-4, 0.051831212625330365, 9.960787611760225E-4, 0.05735532152232015, -0.039083607539737386, 0.257058538232041, 9.960787611760225E-4, 0.28713205324720836, 9.960787611476007E-4, 0.3250692841186347, 9.960787611476007E-4, 0.44083389119904376, 9.960787611760225E-4, 0.5531765043768074, 9.960787611760225E-4, 0.5534597871912325, -0.019043764389294893, 0.7455745545731518, -0.019043764389294893, 0.8499063825163046, 9.960787611760225E-4, 1.4987200216385599, -0.039083607539737386, 1.5160204416367014, -0.01904376438926647, 1.7553988445901048, -0.039083607539708964, 3.165877346126539, 9.960787611760225E-4, 4.815213258998451, 9.960787611476007E-4, 7.149626394307412, -0.019043764389294893, 8.31680259631996, 9.960787611760225E-4, 9.558958805295278, -0.019043764389294893, 23.085112380709433, -0.019043764389294893, 26.37335829006418, 9.960787611476007E-4, 55.157919160584655, -0.01904376438926647, 70.87883662773854, -0.019043764389294893</xy-values>
+                  </data-row>
+               </data-scale>
+               <data-scale label="T" label-shown="false" relative-padding-top="0.55" relative-padding-bottom="0.1" logarithmic="true" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="T0" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="255"/>
+                     <xy-values length="32">0.04007968630088499, 0.018868000013753772, 0.0801593726017984, 0.1729699999850709, 0.11336247188475568, 0.1726081999950111, 0.16031874520356837, 0.1875953999988269, 0.22672494376953978, 0.19427700000233017, 0.32063749040716516, 0.20719240000471473, 0.45344988753907955, 0.21484130001044832, 0.6412749808143019, 0.23307499999646097, 0.9068997750781591, 0.27383760001976043, 1.2825499616286322, 0.26509500000975095, 1.8137995501562898, 0.28460549999726936, 2.5650999232572644, 0.3086102999805007, 3.627599100312608, 0.33333210001001135, 5.130199846514529, 0.36162619999959134, 7.255198200625216, 0.3991253999993205, 74.85886605929272, 1.77331960000447</xy-values>
+                  </data-row>
+                  <data-row label="T1" marker-shown="false" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="128"/>
+                     <xy-values length="32">0.04007968630088499, 0.019297300023026764, 0.0801593726017984, 0.17339959999662824, 0.11336247188475568, 0.1729676999966614, 0.16031874520356837, 0.18701490000239573, 0.22672494376953978, 0.19459529998130165, 0.32063749040716516, 0.2078338999999687, 0.45344988753907955, 0.21590669997385703, 0.6412749808143019, 0.23229649997665547, 0.9068997750781591, 0.25427720000152476, 1.2825499616286322, 0.28864460001932457, 1.8137995501562898, 0.2851911000034306, 2.5650999232572644, 0.3078752000001259, 3.627599100312608, 0.33263930000248365, 5.130199846514529, 0.36265090000233613, 7.255198200625216, 0.39919639998697676, 90.64113394070728, 2.09344389999751</xy-values>
+                  </data-row>
+               </data-scale>
+            </backlash-distance-test-graph>
+            <backlash-speed-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="false" zero-nano-time="-9223372036854775808" last-t="0">
+               <data-scale label="S" label-shown="false" relative-padding-top="0.0" relative-padding-bottom="0.2" logarithmic="false" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <color r="0" g="0" b="0" a="64"/>
+                  <data-row label="B" marker-shown="true" line-shown="true" display-cycle-mask="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                     <xy-values length="10">0.25, 0.018035858835398245, 0.33, 0.018035858835398245, 0.5, 0.018035858835398245, 0.75, 0.018035858835398245, 1.0, 0.054107576506194736</xy-values>
+                  </data-row>
+               </data-scale>
+               <data-scale label="V" label-shown="false" relative-padding-top="0.1" relative-padding-bottom="0.2" logarithmic="false" symmetric-if-signed="false" square-aspect-ratio="false">
+                  <data-row label="V0" marker-shown="true" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="255"/>
+                     <xy-values length="10">0.25, 0.30777235397228053, 0.33, 0.39689041813800124, 0.5, 0.5701705634860202, 0.75, 0.7981398756023917, 1.0, 1.0009793226063233</xy-values>
+                  </data-row>
+                  <data-row label="V1" marker-shown="true" line-shown="true" display-cycle-mask="1">
+                     <color r="0" g="128" b="0" a="128"/>
+                     <xy-values length="10">0.25, 0.30764067065080614, 0.33, 0.39709305940018946, 0.5, 0.570172638809885, 0.75, 0.7945498443516263, 1.0, 1.0007136176336586</xy-values>
+                  </data-row>
+               </data-scale>
+            </backlash-speed-test-graph>
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceVirtualAxis" id="AXS183b9c9a362f4160" name="zTop" type="Z">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -35,21 +211,21 @@
          <axis class="org.openpnp.machine.reference.axis.ReferenceVirtualAxis" id="AXS183b9c9a36309e34" name="rotationTop" type="Rotation">
             <home-coordinate value="0.0" units="Millimeters"/>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a3631976c" name="Z" type="Z" driver-id="DRV183b9c9a35f9b6bc" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a3631976c" name="Z" type="Z" driver-id="DRV183b9c9a35f9b6bc" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="false" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
             <sneak-up-offset value="0.0" units="Millimeters"/>
-            <soft-limit-low value="0.0" units="Millimeters"/>
+            <soft-limit-low value="-42.0" units="Millimeters"/>
             <soft-limit-high value="0.0" units="Millimeters"/>
-            <safe-zone-low value="0.0" units="Millimeters"/>
-            <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
-            <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
-            <jerk-per-second-3 value="0.0" units="Millimeters"/>
+            <safe-zone-low value="-16.0" units="Millimeters"/>
+            <safe-zone-high value="-5.0" units="Millimeters"/>
+            <feedrate-per-second value="10.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="200.0" units="Millimeters"/>
+            <jerk-per-second-3 value="2000.0" units="Millimeters"/>
             <resolution>0.01</resolution>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a363213a4" name="C" type="Rotation" driver-id="DRV183b9c9a35f9b6bc" letter="A" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="true" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS183b9c9a363213a4" name="C" type="Rotation" driver-id="DRV183b9c9a35f9b6bc" letter="A" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="true" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
@@ -58,20 +234,20 @@
             <soft-limit-high value="180.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="3333.3333333333335" units="Millimeters"/>
-            <acceleration-per-second-2 value="6666.666666666667" units="Millimeters"/>
-            <jerk-per-second-3 value="0.0" units="Millimeters"/>
-            <resolution>1.0E-4</resolution>
+            <feedrate-per-second value="100.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="1000.0" units="Millimeters"/>
+            <jerk-per-second-3 value="10000.0" units="Millimeters"/>
+            <resolution>0.1125</resolution>
          </axis>
       </axes>
       <heads>
-         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="None" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
+         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToFiducialLocation" nozzle-solution="Standalone" nozzle-solutions-multiplier="1">
             <nozzles>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS183b9c9a361acbe0" axis-Y-id="AXS183b9c9a3627d81c" axis-Z-id="AXS183b9c9a3631976c" axis-rotation-id="AXS183b9c9a363213a4" id="N1" name="N" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="true" blow-off-closing-valve="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-17.399797201469312" y="8.99966024735258" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <vacuum-sense-actuator-name>AVACS</vacuum-sense-actuator-name>
                   <vacuum-actuator-name>AVAC</vacuum-actuator-name>
@@ -92,8 +268,12 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS183b9c9a361acbe0" axis-Y-id="AXS183b9c9a3627d81c" axis-Z-id="AXS183b9c9a362f4160" axis-rotation-id="AXS183b9c9a36309e34" id="C1" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="24.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="AL1" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" freeze-properties="false">
-                  <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS183b9c9a361acbe0" axis-Y-id="AXS183b9c9a3627d81c" axis-Z-id="AXS183b9c9a362f4160" axis-rotation-id="AXS183b9c9a36309e34" id="C1" name="Top" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="600" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="11" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="30.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="90.48133319513727" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0048076923076923" green-balance="1.0245098039215685" blue-balance="1.0" red-gamma="1.007526154457294" green-gamma="0.9729394368110483" blue-gamma="1.0197658258994529" deinterlace="false" light-actuator-id="AL1" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="Logi C270 HD WebCam \\?\usb#vid_046d&amp;pid_0825&amp;mi_00#7&amp;30de8396&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="1" freeze-properties="false">
+                  <units-per-pixel units="Millimeters" x="0.03417366946778711" y="0.07910571636061832" z="-32.60000000000001" rotation="0.0"/>
+                  <units-per-pixel-secondary units="Millimeters" x="0.026551624020369192" y="0.0690342224529599" z="-29.60000000000001" rotation="0.0"/>
+                  <camera-primary-z value="0.0" units="Millimeters"/>
+                  <camera-secondary-z value="0.0" units="Millimeters"/>
+                  <default-z value="-32.60000000000001" units="Millimeters"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <roaming-radius value="0.0" units="Millimeters"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -101,9 +281,9 @@
                      <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                      <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
                   </calibration>
-                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="false" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1000.0" mirrored="1.0" apparent-motion-direction="1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5">
-                     <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
-                     <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+                  <advanced-calibration enabled="false" overriding-old-transforms-and-distortion-correction-settings="false" valid="false" data-available="true" alpha-percent="100" rotation-error-z="0.0" rotation-error-y="0.0" rotation-error-x="0.0" rms-error="0.0" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="22.53694105600405" mirrored="1.0" apparent-motion-direction="-1.0" width-fov="0.0" height-fov="0.0" virtual-width-fov="0.0" virtual-height-fov="0.0" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5" raw-cropped-image-width="160" raw-cropped-image-height="120">
+                     <camera-matrix length="9">460.28572236693043, 0.0, 79.5, 0.0, 982.7591720333339, 59.5, 0.0, 0.0, 1.0</camera-matrix>
+                     <distortion-coefficients length="5">-14.914820354522274, 583.5118970970417, 0.0, 0.0, -4276.173899283445</distortion-coefficients>
                      <pipeline>
                         <stages>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-option="SettleFullArea" count="1"/>
@@ -117,9 +297,18 @@
                      <unit-vector-phy-cam-Z-in-mach-ref-frame length="3">0.0, 0.0, 0.0</unit-vector-phy-cam-Z-in-mach-ref-frame>
                      <vector-from-mach-to-vir-cam-in-mach-ref-frame length="3">0.0, 0.0, 0.0</vector-from-mach-to-vir-cam-in-mach-ref-frame>
                      <vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame length="3">0.0, 0.0, 0.0</vector-from-phy-cam-to-desired-principal-point-in-phy-cam-ref-frame>
-                     <saved-test-pattern-3-d-points-list length="0"/>
-                     <saved-test-pattern-image-points-list length="0"/>
-                     <modeled-test-pattern-image-points-list length="0"/>
+                     <saved-test-pattern-3-d-points-list length="2">
+                        <double- length="231">-257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.13246923521774, -169.1459303654555, -31.900000000000013, -257.1672343922332, -169.95977468610158, -31.900000000000013, -257.0222094379989, -169.948216564218, -31.900000000000013, -256.79008194968895, -169.4833747388676, -31.900000000000013, -256.7734018250879, -169.34554046109747, -31.900000000000013, -256.859719457758, -169.7357924221436, -31.900000000000013, -256.919348649628, -168.51225856303643, -31.900000000000013, -257.3236153010649, -168.41436158606683, -31.900000000000013, -256.82164959797046, -168.7656538480178, -31.900000000000013, -257.3812855668876, -168.50444638557252, -31.900000000000013, -257.4561073845373, -169.47288682952598, -31.900000000000013, -256.97551286454444, -168.42813061816216, -31.900000000000013, -257.3620014009359, -169.74863643107852, -31.900000000000013, -256.90773394952447, -169.83008321006733, -31.900000000000013, -257.4673443901306, -168.76700739953344, -31.900000000000013, -257.4837529830623, -169.30955900694173, -31.900000000000013, -257.11133496256724, -168.3275336939607, -31.900000000000013, -257.4298606605457, -168.6222013710282, -31.900000000000013, -257.4966070751506, -169.1260401200374, -31.900000000000013, -256.7739642401835, -169.05427705293712, -31.900000000000013, -257.3077206380837, -169.8396395804808, -31.900000000000013, -257.03686209669416, -168.36690238561567, -31.900000000000013, -257.18077641275306, -168.3222776197527, -31.900000000000013, -256.7915146030969, -168.90932368750603, -31.900000000000013, -257.239386636981, -169.91575905315355, -31.900000000000013, -257.24912667967965, -168.34735027576917, -31.900000000000013, -256.96538255565645, -169.90432146038793, -31.900000000000013, -257.4913058756095, -168.94341429013537, -31.900000000000013, -257.0939442034136, -169.97066500012866, -31.900000000000013, -256.7679356289071, -169.2011723828649, -31.900000000000013, -257.41456698445825, -169.62207716798582, -31.900000000000013, -256.81759635278235, -169.61119730212584, -31.900000000000013, -256.8642373088702, -168.6314927708785, -31.900000000000013, -256.93807948389014, -167.59036712820824, -31.900000000000013, -256.50564272944877, -170.0870952471181, -31.900000000000013, -257.7803671537158, -169.79702339069436, -31.900000000000013, -257.80002758949973, -168.37716082891993, -31.900000000000013, -256.40340620023693, -169.25453406707024, -31.900000000000013, -257.8000275894997, -169.46640725244646, -31.900000000000013, -256.41462508890504, -168.97337311498296, -31.900000000000013, -256.79772239563493, -170.66213518056153, -31.900000000000013, -256.9149442687443, -170.75213660718876, -31.900000000000013, -256.81293110700454, -167.7174268772613, -31.900000000000013, -257.7251653499178, -168.09222854417877, -31.900000000000013, -257.5943433153758, -170.34569711094034, -31.900000000000013, -257.48686915472217, -170.52782901435478, -31.900000000000013, -256.44970738338975, -168.67799461968536, -31.900000000000013, -257.0587798048122, -170.79563190829262, -31.900000000000013, -257.86096944569096, -169.09306291944247, -31.900000000000013, -257.07325628430516, -167.51497187035787, -31.900000000000013, -256.4492716514259, -169.83012601292575, -31.900000000000013, -257.84991851125545, -168.73813522010045, -31.900000000000013, -256.68475243204136, -170.51703634265044, -31.900000000000013, -257.37128485170416, -167.55219491448455, -31.900000000000013, -257.62845154819877, -167.85976792044318, -31.900000000000013, -256.5870407634226, -170.3258240491072, -31.900000000000013, -257.51286089693343, -167.6804727909074, -31.900000000000013, -257.21505289583655, -167.49726119941627, -31.900000000000013, -256.697330505982, -167.89496103837993, -31.900000000000013, -257.69562264389526, -170.10125298379654, -31.900000000000013, -256.5949488429536, -168.11982810327078, -31.900000000000013, -256.506974251602, -168.40053758243576, -31.900000000000013, -256.4140703020725, -169.5417456377591, -31.900000000000013, -257.19294652857303, -170.7767719266409, -31.900000000000013, -257.3465934465952, -170.68534056019618, -31.900000000000013, -257.4836753940893, -166.75111026307195, -31.900000000000013, -256.1085911660553, -168.44238019877193, -31.900000000000013, -257.0434423401872, -166.69933962424278, -31.900000000000013, -258.20539340519474, -168.49875726868714, -31.900000000000013, -256.05541511189, -168.89075030559536, -31.900000000000013, -256.8210882202232, -171.56259899482697, -31.900000000000013, -258.10956333102547, -170.09782693342171, -31.900000000000013, -258.1338213007613, -167.992791212905, -31.900000000000013, -257.4490147447079, -171.45893334042717, -31.900000000000013, -256.48097716456243, -167.26712902171897, -31.900000000000013, -256.4641498556721, -171.20772658953055, -31.900000000000013, -256.65097280736614, -167.00592334568947, -31.900000000000013, -257.2589706544791, -166.67304807211806, -31.900000000000013, -256.0552973363758, -169.74505275549194, -31.900000000000013, -258.22542883655086, -169.051554717729, -31.900000000000013, -257.87048607867325, -167.20542507423843, -31.900000000000013, -257.83042110761073, -170.93508559865737, -31.900000000000013, -256.1932191848575, -168.03174058676984, -31.900000000000013, -258.15565262439617, -169.590299871477, -31.900000000000013, -257.6642054506249, -171.21860277399455, -31.900000000000013, -257.02855891494903, -171.62081159864275, -31.900000000000013, -257.23642820681033, -171.58709413801947, -31.900000000000013, -258.015591544143, -167.5481717729421, -31.900000000000013, -256.31177370936643, -170.9096111870323, -31.900000000000013, -256.0388719593877, -169.31576515382326, -31.900000000000013, -256.63354086497577, -171.42340673121987, -31.900000000000013, -256.3209017341187, -167.62093735305882, -31.900000000000013, -256.1066808205376, -170.16634216745322, -31.900000000000013, -256.19342028225003, -170.56203061720004, -31.900000000000013, -257.9835213648616, -170.56004158519525, -31.900000000000013, -256.83911957412045, -166.81397310688726, -31.900000000000013, -257.6944228049281, -166.9375653938834, -31.900000000000013, -255.76370135605154, -170.5001953206683, -31.900000000000013, -256.47307746384104, -172.1882577693796, -31.900000000000013, -255.69581248236597, -169.93924009048706, -31.900000000000013, -256.0440999456065, -167.1296627083292, -31.900000000000013, -257.5907317492507, -165.94707867205548, -31.900000000000013, -255.7660157640406, -168.2158979640115, -31.900000000000013, -256.7341166286688, -166.04252423356948, -31.900000000000013, -257.8384270724673, -171.91374712223168, -31.900000000000013, -258.4013553599804, -167.6665423748708, -31.900000000000013, -257.5554939407283, -172.2291351656809, -31.900000000000013, -257.87321657128365, -166.19154763855462, -31.900000000000013, -258.11009049798946, -166.54664280537983, -31.900000000000013, -257.28440127053057, -165.84780812618453, -31.900000000000013, -256.25980558610615, -166.64823229666447, -31.900000000000013, -258.4051157714329, -169.67665114679582, -31.900000000000013, -258.30989529193033, -167.01525181102897, -31.900000000000013, -255.67433587558335, -169.37321166719062, -31.900000000000013, -257.2688236870596, -172.40181334238875, -31.900000000000013, -255.87673979897465, -167.6739590424955, -31.900000000000013, -255.87738618104106, -171.02295586247598, -31.900000000000013, -256.48564328678214, -166.29878466464987, -31.900000000000013, -255.69691011685578, -168.79909699307697, -31.900000000000013, -258.0717034473229, -171.5134584233274, -31.900000000000013, -256.7277880584851, -172.37330567972842, -31.900000000000013, -258.3839796076069, -170.35256345877016, -31.900000000000013, -258.45421648601626, -168.35857763856362, -31.900000000000013, -258.4461275151743, -169.0259365015378, -31.900000000000013, -257.0061092459433, -172.44601673670346, -31.900000000000013, -257.0017595515446, -165.88825128047813, -31.900000000000013, -256.24333771851366, -171.8980904440447, -31.900000000000013, -258.27312710898497, -171.0135541398584, -31.900000000000013, -256.036516832452, -171.49342316245733, -31.900000000000013, -258.49021959597934, -166.63669399589952, -31.900000000000013, -256.6241664441037, -165.2753153974633, -31.900000000000013, -255.77010149902875, -172.097987451819, -31.900000000000013, -257.29271663986225, -165.02352039267203, -31.900000000000013, -255.45562988263137, -169.40909807542982, -31.900000000000013, -257.66536446998487, -172.99641364983745, -31.900000000000013, -255.56064836118455, -167.31458657590824, -31.900000000000013, -258.5532433201748, -167.49731716774434, -31.900000000000013, -255.5597092736196, -171.47762299953135, -31.900000000000013, -258.0463679756552, -165.4394109615885, -31.900000000000013, -256.9716186349055, -173.27102166976752, -31.900000000000013, -258.02585579865445, -172.58973204602012, -31.900000000000013, -258.50329460886945, -170.4610134124757, -31.900000000000013, -257.68014961735264, -165.1347247534968, -31.900000000000013, -255.44030804370496, -170.0744028413908, -31.900000000000013, -258.46076152012006, -171.28362573157108, -31.900000000000013, -255.46090848212876, -170.7859340311706, -31.900000000000013, -258.3485974309229, -165.88588373880606, -31.900000000000013, -256.32166537743115, -165.58988414431366, -31.900000000000013, -257.3115264331957, -173.2124698066294, -31.900000000000013, -258.31071576937984, -172.09668367930695, -31.900000000000013, -255.45143234116185, -168.73328210185417, -31.900000000000013, -256.03590030781874, -166.03453176999528, -31.900000000000013, -256.9610679259109, -165.07674954668408, -31.900000000000013, -256.32455673474965, -172.9638153723423, -31.900000000000013, -258.52664849836464, -169.70378449263228, -31.900000000000013, -255.49872626915462, -168.0331794431642, -31.900000000000013, -255.77612344663046, -166.61455808945573, -31.900000000000013, -256.0262514357177, -172.59417760555053, -31.900000000000013, -256.6305228739317, -173.18222333921284, -31.900000000000013, -255.48741439027395, -166.15826416864067, -31.900000000000013, -256.5179970144205, -164.57750445786914, -31.900000000000013, -255.35847349170115, -171.7896016698746, -31.900000000000013, -255.49919814273065, -172.69221972678136, -31.900000000000013, -258.2122564540697, -173.26726824708498, -31.900000000000013, -255.3539752213804, -167.9407178615517, -31.900000000000013, -256.9601454043446, -173.9454850353461, -31.900000000000013, -255.31014580325473, -170.9138989232183, -31.900000000000013, -256.1615990448992, -173.7262783129594, -31.900000000000013, -258.5170327732719, -165.35992118600916, -31.900000000000013, -255.82029186489237, -165.40534323602265, -31.900000000000013, -258.4534899512585, -172.4282970104214, -31.900000000000013, -257.35416435500196, -173.90643603504577, -31.900000000000013, -255.40088810608844, -167.10579592943185, -31.900000000000013, -258.21722356437346, -164.68486787313054, -31.900000000000013, -256.55116592531954, -173.90447812165846, -31.900000000000013, -256.16013228095244, -164.87783707050355, -31.900000000000013, -257.74883736361636, -164.47454562470787, -31.900000000000013, -255.81038676202022, -173.29210494832597, -31.900000000000013, -257.32066229815183, -164.43634625538772, -31.900000000000013, -257.7706432295488, -173.76763070145572, -31.900000000000013, -255.31610986910997, -170.14500257654058, -31.900000000000013, -256.9297804662993, -164.47017815409876, -31.900000000000013, -257.7856421391374, -164.15007542315072, -31.900000000000013, -255.33727899309145, -165.9298953986665, -31.900000000000013, -256.5160465986129, -174.25468676756992, -31.900000000000013, -255.58178401659077, -164.8210497352638, -31.900000000000013, -257.37012373217203, -174.24528223345465, -31.900000000000013, -258.3157898261487, -164.23541289866094, -31.900000000000013, -255.30699123248968, -173.08980643561728, -31.900000000000013, -257.87788241305003, -174.16645051210517, -31.900000000000013, -256.951415047002, -174.26937638292017, -31.900000000000013, -258.38981178040126, -173.90690628159362, -31.900000000000013, -256.07181227387935, -174.16008834947527, -31.900000000000013, -256.921326840146, -164.19303286804006, -31.900000000000013, -256.4676462268978, -164.24967663905517, -31.900000000000013, -255.61281918741676, -173.95494139316315, -31.900000000000013, -256.0139302317348, -164.4076556694565, -31.900000000000013, -255.5227394222657, -174.2598914914137, -31.900000000000013, -255.40514298133195, -164.39788769475368, -31.900000000000013, -258.4927937759001, -174.19756644663488, -31.900000000000013</double->
+                        <double- length="56">-269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -269.98510798307257, -195.16292086162343, -29.900000000000013, -270.39952257415575, -193.4241379722595, -29.900000000000013, -269.5892779625014, -191.93349280963452, -29.900000000000013, -270.33801967392486, -198.64242621765501, -29.900000000000013, -270.084673652776, -199.15824720503068, -29.900000000000013, -269.5239988652366, -196.30756721809504, -29.900000000000013, -269.70086149227996, -197.98601773960448, -29.900000000000013, -269.5764808840649, -196.9644491699668, -29.900000000000013, -269.4909733901956, -195.72642001480023, -29.900000000000013, -270.29597607503734, -192.51781365362984, -29.900000000000013, -269.4680304988511, -195.10075118476638, -29.900000000000013, -269.63688364577575, -197.52578675340183, -29.900000000000013, -270.40002149239916, -198.25423747553617, -29.900000000000013, -270.4697399276553, -194.40967830691636, -29.900000000000013, -270.5006286784929, -195.16837873231606, -29.900000000000013, -270.2688660312214, -198.91787692647324, -29.900000000000013, -269.3993600009029, -187.98159945367357, -29.900000000000013, -269.25630035465144, -199.5429744813633, -29.900000000000013, -268.9764950702179, -195.756972469582, -29.900000000000013, -269.0668879043957, -197.51086903798418, -29.900000000000013, -269.29726956679974, -203.5006880993626, -29.900000000000013, -268.6034007267935, -198.6197163248005, -29.900000000000013, -268.11760218408193, -199.35091011103654, -29.900000000000013, -269.4869296076209, -207.45289412801225, -29.900000000000013, -268.98940147222646, -205.33526233026424, -29.900000000000013</double->
+                     </saved-test-pattern-3-d-points-list>
+                     <saved-test-pattern-image-points-list length="2">
+                        <double- length="231">78.75, 54.25, 78.75, 54.25, 79.0, 54.125, 78.875, 54.5, 79.0, 54.125, 78.75, 54.25, 78.75, 54.625, 78.75, 54.625, 78.875, 54.625, 78.625, 53.75, 78.875, 55.125, 79.0, 53.875, 78.875, 54.0, 78.75, 54.5, 78.75, 54.25, 78.875, 54.875, 79.0, 54.875, 79.125, 54.375, 78.75, 53.5, 78.75, 53.25, 78.875, 54.125, 78.875, 54.625, 78.625, 53.75, 79.0, 54.75, 78.625, 53.75, 78.875, 54.875, 78.75, 54.25, 78.875, 54.5, 79.125, 53.5, 78.875, 54.875, 78.75, 54.625, 78.875, 54.0, 89.25, 51.5, 89.0, 56.5, 82.875, 65.125, 81.375, 64.375, 86.375, 62.375, 70.625, 58.75, 69.5, 48.875, 73.75, 62.25, 70.625, 46.75, 83.375, 44.375, 69.625, 58.375, 86.875, 46.875, 87.5, 60.5, 74.5, 43.875, 81.0, 43.875, 68.5, 53.5, 72.375, 45.25, 79.0, 44.125, 77.25, 63.625, 87.875, 49.5, 68.875, 56.75, 68.375, 51.375, 75.5, 64.5, 88.875, 50.875, 68.75, 51.5, 88.25, 58.625, 76.375, 44.375, 89.375, 55.25, 79.5, 63.5, 85.125, 45.125, 84.5, 63.875, 71.875, 63.125, 59.5, 60.0, 90.375, 72.25, 87.625, 36.75, 69.75, 35.25, 79.875, 75.875, 83.75, 35.25, 76.0, 75.875, 97.875, 63.5, 98.625, 60.75, 60.75, 63.625, 66.25, 36.625, 94.5, 40.5, 96.5, 43.5, 72.875, 73.875, 99.75, 56.25, 78.875, 32.875, 58.375, 56.25, 87.25, 73.5, 74.375, 32.375, 96.0, 66.875, 59.25, 47.375, 63.25, 39.625, 93.875, 69.0, 60.875, 42.875, 58.375, 52.25, 62.625, 67.375, 91.5, 38.0, 65.5, 69.5, 69.25, 71.625, 83.375, 74.25, 99.5, 52.5, 98.5, 46.5, 49.375, 44.25, 69.375, 84.25, 48.5, 56.5, 71.5, 24.875, 75.125, 86.125, 108.875, 62.875, 91.5, 26.875, 65.25, 25.625, 107.875, 43.625, 55.375, 72.25, 104.5, 72.5, 52.0, 68.125, 48.375, 49.875, 86.375, 85.375, 78.5, 23.5, 55.625, 33.25, 102.0, 34.125, 64.5, 79.875, 85.375, 25.25, 105.375, 37.25, 109.75, 57.25, 109.5, 49.5, 59.875, 29.875, 100.875, 76.125, 80.625, 85.75, 107.125, 68.0, 59.5, 76.5, 91.75, 83.625, 96.5, 79.875, 97.5, 29.5, 49.625, 62.75, 52.125, 38.125, 95.75, 92.375, 116.75, 73.25, 88.625, 94.75, 53.25, 86.5, 39.5, 40.5, 66.75, 93.625, 40.0, 65.875, 113.875, 33.875, 61.5, 19.5, 117.75, 40.25, 43.125, 33.125, 47.5, 26.875, 38.25, 48.625, 47.5, 78.5, 86.875, 18.125, 53.625, 20.75, 81.25, 96.625, 119.625, 48.75, 59.75, 89.625, 102.375, 88.375, 43.375, 73.375, 74.125, 95.0, 109.25, 26.625, 119.25, 64.625, 95.125, 18.125, 70.5, 16.875, 78.375, 18.25, 120.25, 56.375, 38.375, 58.375, 113.125, 78.875, 103.0, 22.125, 108.25, 85.375, 49.375, 16.375, 30.375, 69.25, 115.625, 91.75, 27.625, 50.25, 81.875, 100.125, 127.375, 36.25, 55.5, 99.5, 59.75, 14.375, 108.0, 98.0, 33.5, 28.5, 130.25, 57.625, 122.625, 27.75, 96.625, 16.375, 29.375, 38.375, 90.125, 101.875, 106.875, 15.75, 99.5, 100.5, 39.875, 19.875, 33.875, 79.125, 129.75, 47.25, 116.625, 19.75, 73.25, 102.5, 39.625, 86.75, 28.125, 60.125, 126.5, 75.875, 87.125, 14.875, 64.5, 100.5, 46.75, 91.625, 121.75, 84.625, 129.125, 67.125, 40.875, 100.0, 21.375, 72.875, 112.125, 102.625, 123.25, 98.625, 131.0, 22.125, 63.125, 104.125, 138.75, 57.25, 100.875, 104.875, 136.125, 80.125, 33.25, 14.625, 31.625, 90.75, 120.875, 15.875, 138.375, 45.25, 52.875, 102.125, 24.25, 24.125, 138.125, 69.0, 24.875, 82.125, 21.25, 37.125, 130.625, 90.75, 20.375, 49.25, 136.875, 35.625, 91.625, 105.25, 20.125, 61.875, 17.125, 35.875, 38.0, 106.5, 142.5, 70.5, 23.75, 98.25, 142.75, 44.25, 18.75, 21.75, 128.25, 102.375, 142.125, 31.5, 142.875, 57.625, 139.5, 17.5, 141.5, 83.5, 16.625, 61.75, 17.125, 75.875, 139.25, 96.125, 18.875, 88.625, 143.125, 97.625, 18.625, 103.75, 142.75, 14.25</double->
+                        <double- length="56">74.875, 40.75, 75.0, 43.875, 74.875, 44.25, 74.875, 42.125, 74.875, 43.625, 74.75, 44.375, 75.0, 44.25, 74.75, 44.375, 74.875, 41.375, 74.875, 42.75, 74.75, 41.5, 74.75, 40.5, 74.875, 44.75, 74.75, 43.5, 74.875, 41.625, 74.875, 40.625, 74.875, 42.125, 75.0, 43.875, 74.75, 43.5, 74.875, 42.75, 74.875, 41.25, 74.875, 40.75, 74.875, 44.125, 74.875, 40.25, 74.875, 43.125, 75.0, 40.0, 74.75, 41.5, 74.75, 42.375, 74.625, 44.125, 74.875, 42.0, 74.625, 44.125, 74.875, 43.75, 51.0, 27.875, 97.625, 62.875, 48.875, 67.5, 55.375, 77.5, 90.875, 57.125, 114.625, 51.875, 100.0, 55.25, 82.875, 60.125, 38.625, 32.125, 74.0, 60.25, 108.125, 53.625, 29.5, 64.25, 65.0, 25.375, 75.625, 21.5, 26.125, 48.875, 113.125, 66.125, 136.375, 67.375, 83.125, 78.25, 107.75, 74.375, 139.375, 84.5, 123.75, 91.875, 134.625, 109.875, 99.125, 110.5, 127.0, 94.0</double->
+                     </saved-test-pattern-image-points-list>
+                     <modeled-test-pattern-image-points-list length="2">
+                        <double-/>
+                        <double-/>
+                     </modeled-test-pattern-image-points-list>
                      <outlier-points length="0"/>
                      <trial-step value="0.5" units="Millimeters"/>
                      <calibrated-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -127,32 +316,37 @@
                   <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                      <focal-resolution value="0.05" units="Millimeters"/>
                   </focus-provider>
-                  <back-light-compensation property="BackLightCompensation"/>
-                  <brightness property="Brightness"/>
-                  <contrast property="Contrast"/>
-                  <exposure property="Exposure"/>
+                  <red-color-map length="8">0.043137254901960784, 0.16862745098039217, 0.2901960784313726, 0.42745098039215684, 0.5568627450980392, 0.6901960784313725, 0.8196078431372549, 0.9450980392156862</red-color-map>
+                  <green-color-map length="8">0.08627450980392157, 0.19607843137254902, 0.3137254901960784, 0.4392156862745098, 0.5647058823529412, 0.6980392156862745, 0.8313725490196079, 0.8980392156862745</green-color-map>
+                  <blue-color-map length="8">0.06274509803921569, 0.18823529411764706, 0.3333333333333333, 0.4588235294117647, 0.5764705882352941, 0.6901960784313725, 0.8156862745098039, 0.9294117647058824</blue-color-map>
+                  <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+                  <brightness property="Brightness" value="128" auto="false"/>
+                  <contrast property="Contrast" value="32" auto="false"/>
+                  <exposure property="Exposure" value="-6" auto="false"/>
                   <focus property="Focus"/>
-                  <gain property="Gain"/>
+                  <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma"/>
                   <hue property="Hue"/>
-                  <power-line-frequency property="PowerLineFrequency"/>
-                  <saturation property="Saturation"/>
-                  <sharpness property="Sharpness"/>
-                  <white-balance property="WhiteBalance"/>
+                  <power-line-frequency property="PowerLineFrequency" value="2" auto="false"/>
+                  <saturation property="Saturation" value="32" auto="false"/>
+                  <sharpness property="Sharpness" value="0" auto="false"/>
+                  <white-balance property="WhiteBalance" value="4000" auto="false"/>
                   <zoom property="Zoom"/>
                </camera>
             </cameras>
-            <park-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <park-location units="Millimeters" x="290.057" y="94.5" z="0.0" rotation="0.0"/>
             <soft-limits-enabled>false</soft-limits-enabled>
             <pump-actuator-name>PUMP</pump-actuator-name>
-            <homing-fiducial-location units="Millimeters" x="5.736" y="6.112" z="0.0" rotation="0.0"/>
-            <calibration-primary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <calibration-secondary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <homing-fiducial-location units="Millimeters" x="256.648" y="167.413" z="0.0" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="256.6482027985308" y="167.4126602473526" z="-32.60000000000001" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="269.3024337093262" y="193.41401509560504" z="-29.60000000000001" rotation="0.0"/>
+            <calibration-primary-fiducial-diameter value="0.3417366946778711" units="Millimeters"/>
+            <calibration-secondary-fiducial-diameter value="0.3186194882444303" units="Millimeters"/>
          </head>
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F5" name="Upper Strips - 1" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F5" name="Upper Strips - 1" enabled="false" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="-90.0"/>
             <reference-hole-location units="Millimeters" x="138.715" y="88.244" z="0.0" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="139.057" y="84.226" z="0.0" rotation="0.0"/>
@@ -174,7 +368,7 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F6" name="Upper Strips - 2" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F6" name="Upper Strips - 2" enabled="false" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="-90.0"/>
             <reference-hole-location units="Millimeters" x="155.055" y="87.275" z="0.0" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="154.713" y="83.314" z="0.0" rotation="0.0"/>
@@ -196,7 +390,7 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F7" name="Upper Strips - 3" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F7" name="Upper Strips - 3" enabled="false" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="-90.0"/>
             <reference-hole-location units="Millimeters" x="172.679" y="56.242" z="0.0" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="172.251" y="60.289" z="0.0" rotation="0.0"/>
@@ -218,7 +412,7 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F8" name="Upper Strips - 4" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F8" name="Upper Strips - 4" enabled="false" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="-90.0"/>
             <reference-hole-location units="Millimeters" x="184.199" y="55.074" z="0.0" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="184.456" y="59.035" z="0.0" rotation="0.0"/>
@@ -240,7 +434,7 @@
                </stages>
             </pipeline>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F1" name="Lower Strips - 1" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="F1" name="Lower Strips - 1" enabled="false" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="WhitePaper" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="0">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="-90.0"/>
             <reference-hole-location units="Millimeters" x="147.347" y="40.285" z="0.0" rotation="0.0"/>
             <last-hole-location units="Millimeters" x="147.433" y="36.238" z="0.0" rotation="0.0"/>
@@ -328,13 +522,18 @@
                </stages>
             </pipeline>
          </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR183d41d8d491780c" name="ReferenceAutoFeeder" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_4mmAdvance" actuator-value="32.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="84.831" y="224.054" z="-37.713" rotation="0.0"/>
+         </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="C2" name="Bottom" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="AL2" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" freeze-properties="false">
-            <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="C2" name="Bottom" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="250" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="89" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="30.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-7.952436469844117" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0144230769230769" green-balance="1.0292682926829269" blue-balance="1.0" red-gamma="1.0795359587484947" green-gamma="0.8561394255312609" blue-gamma="1.075985751641023" deinterlace="false" light-actuator-id="AL2" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="Logi C270 HD WebCam \\?\usb#vid_046d&amp;pid_0825&amp;mi_00#7&amp;2d9cfaa2&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="35" freeze-properties="false">
+            <units-per-pixel units="Millimeters" x="0.003531294122491083" y="0.009599608276366349" z="0.0" rotation="0.0"/>
+            <camera-primary-z value="-19.01333333333334" units="Millimeters"/>
+            <default-z value="0.0" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <roaming-radius value="0.0" units="Millimeters"/>
-            <head-offsets units="Millimeters" x="118.799" y="7.117" z="0.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="172.83054632791823" y="186.25426671079254" z="-19.01333333333334" rotation="0.0"/>
             <calibration enabled="false">
                <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
@@ -365,18 +564,21 @@
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
-            <back-light-compensation property="BackLightCompensation"/>
-            <brightness property="Brightness"/>
-            <contrast property="Contrast"/>
-            <exposure property="Exposure"/>
+            <red-color-map length="8">0.050980392156862744, 0.1803921568627451, 0.3568627450980392, 0.4588235294117647, 0.5764705882352941, 0.6941176470588235, 0.8235294117647058, 0.9450980392156862</red-color-map>
+            <green-color-map length="8">0.07450980392156863, 0.2, 0.3215686274509804, 0.3254901960784314, 0.4980392156862745, 0.7019607843137254, 0.8352941176470589, 0.984313725490196</green-color-map>
+            <blue-color-map length="8">0.058823529411764705, 0.1803921568627451, 0.34901960784313724, 0.4470588235294118, 0.5647058823529412, 0.6941176470588235, 0.8156862745098039, 0.9294117647058824</blue-color-map>
+            <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+            <brightness property="Brightness" value="128" auto="false"/>
+            <contrast property="Contrast" value="32" auto="false"/>
+            <exposure property="Exposure" value="-6" auto="false"/>
             <focus property="Focus"/>
-            <gain property="Gain"/>
+            <gain property="Gain" value="0" auto="false"/>
             <gamma property="Gamma"/>
             <hue property="Hue"/>
-            <power-line-frequency property="PowerLineFrequency"/>
-            <saturation property="Saturation"/>
-            <sharpness property="Sharpness"/>
-            <white-balance property="WhiteBalance"/>
+            <power-line-frequency property="PowerLineFrequency" value="2" auto="false"/>
+            <saturation property="Saturation" value="32" auto="false"/>
+            <sharpness property="Sharpness" value="0" auto="false"/>
+            <white-balance property="WhiteBalance" value="4000" auto="false"/>
             <zoom property="Zoom"/>
          </camera>
       </cameras>
@@ -397,13 +599,13 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV183b9c9a35f9b6bc" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
-            <serial line-ending-type="LF" port-name="COM7" baud="250000" flow-control="RtsCts" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV183b9c9a35f9b6bc" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="40000" connect-wait-time-milliseconds="12000" dollar-wait-time-milliseconds="10000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+            <serial line-ending-type="LF" port-name="COM4" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="GcodeServer" port="50043" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.1.x (May  5 2025 14:02:25) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:3D Printer KINEMATICS:Cartesian EXTRUDER_COUNT:0 AXIS_COUNT:5 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
-            <reported-axes><![CDATA[X:0.00 Y:0.00 Z:0.00 A:0.00 B:0.00 Count X:0 Y:0 Z:0 A:0 B:0]]></reported-axes>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.1.x (May 20 2025 14:12:40) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:3D Printer KINEMATICS:Cartesian EXTRUDER_COUNT:0 AXIS_COUNT:5 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
+            <reported-axes><![CDATA[X:360.00 Y:167.46 Z:0.00 A:0.00 B:256.77 Count X:36000 Y:16746 Z:0 A:0 B:4563]]></reported-axes>
             <command head-mountable-id="ACT183b9cad0136e16c" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M106}{False:M106 S0}]]></text>
             </command>
@@ -414,17 +616,13 @@
                <text><![CDATA[M42 S{True:1}{False:0}]]></text>
             </command>
             <command head-mountable-id="AL2" type="ACTUATE_BOOLEAN_COMMAND">
-               <text><![CDATA[M42 S{True:1}{False:0}]]></text>
+               <text><![CDATA[M42 P10 S{True:255}{False:0}]]></text>
             </command>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
             <command type="POSITION_REPORT_REGEX">
                <text><![CDATA[^.*Y:(?<Y>-?\d+\.\d+)\s*Z:(?<Z>-?\d+\.\d+)\s*A:(?<A>-?\d+\.\d+)\s*B:(?<B>-?\d+\.\d+).*]]></text>
-            </command>
-            <command type="CONNECT_COMMAND">
-               <text><![CDATA[G21 ; Set millimeters mode ]]></text>
-               <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
             </command>
             <command type="HOME_COMMAND">
                <text><![CDATA[{Acceleration:M204 S%.2f ; Initialize acceleration}]]></text>
@@ -438,17 +636,27 @@
             </command>
             <command type="MOVE_TO_COMMAND">
                <text><![CDATA[{Acceleration:M204 S%.1f }]]></text>
-               <text><![CDATA[G1 {B:B%.2f} {Y:Y%.2f} {Z:Z%.2f} {A:A%.4f} {FeedRate:F%.0f} ; move to target]]></text>
+               <text><![CDATA[G1 {B:B%.2f} {Y:Y%.2f} {Z:Z%.2f} {A:A%.1f} {FeedRate:F%.0f} ; move to target]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
                <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
+            </command>
+            <command head-mountable-id="A1" type="ACTUATOR_READ_COMMAND">
+               <text><![CDATA[M105; read inputs]]></text>
+            </command>
+            <command head-mountable-id="A1" type="ACTUATOR_READ_REGEX">
+               <text><![CDATA[.*Pressure:(?<Value>-?\d+\.\d+).*]]></text>
+            </command>
+            <command type="CONNECT_COMMAND">
+               <text><![CDATA[G21 ; Set millimeters mode ]]></text>
+               <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
             </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
             <send-on-change-jerk send-on-change="false" relative-deviation="0.001" variable="Jerk"/>
          </driver>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV183b9e4d58f38c88" name="0816 feeder controller" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
-            <serial line-ending-type="LF" port-name="COM11" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV183b9e4d58f38c88" name="0816 feeder controller" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="10000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+            <serial line-ending-type="LF" port-name="COM6" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -466,6 +674,9 @@
                <text><![CDATA[M600 N32 F4]]></text>
                <text><![CDATA[M601 N32]]></text>
             </command>
+            <command type="CONNECT_COMMAND">
+               <text><![CDATA[M610 S1]]></text>
+            </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
             <send-on-change-jerk send-on-change="false" relative-deviation="0.001" variable="Jerk"/>
@@ -475,12 +686,38 @@
       <default-board-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
       <properties>
          <entry>
+            <string>CameraCalibrationProcessProperties</string>
+            <object class="org.openpnp.gui.processes.CalibrateCameraProcess$CameraCalibrationProcessProperties">
+               <max-allowed-pixel-step-factor>0.08333333333333333</max-allowed-pixel-step-factor>
+               <min-allowed-pixel-step-factor>0.027777777777777776</min-allowed-pixel-step-factor>
+               <change-mask-threshold>3</change-mask-threshold>
+               <mask-growth-threshold-factor>0.7</mask-growth-threshold-factor>
+               <mask-shrink-thresholdfactor>0.1</mask-shrink-thresholdfactor>
+               <mask-growth-factor>0.1</mask-growth-factor>
+               <mask-shrinkfactor>0.05</mask-shrinkfactor>
+               <initial-mask-diameter-fraction>0.25</initial-mask-diameter-fraction>
+               <centering-diameter-fraction>0.5</centering-diameter-fraction>
+               <max-error-count>15</max-error-count>
+               <default-detection-diameter>25</default-detection-diameter>
+               <default-up-looking-secondary-offset-Z-mm>2.0</default-up-looking-secondary-offset-Z-mm>
+            </object>
+         </entry>
+         <entry>
+            <string>MultiPlacementBoardLocationProperties</string>
+            <object class="org.openpnp.gui.processes.MultiPlacementBoardLocationProcess$MultiPlacementBoardLocationProperties">
+               <scaling-tolerance>0.05</scaling-tolerance>
+               <shearing-tolerance>0.05</shearing-tolerance>
+               <board-location-tolerance value="5.0" units="Millimeters"/>
+               <auto-move-for-all-placements>true</auto-move-for-all-placements>
+            </object>
+         </entry>
+         <entry>
             <string>Welcome2_0_Dialog_Shown</string>
             <object class="java.lang.Boolean">true</object>
          </entry>
       </properties>
       <nozzle-tips>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="NT1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="NT1" pick-dwell-milliseconds="0" place-dwell-milliseconds="1000" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -497,7 +734,7 @@
             <min-part-diameter value="0.0" units="Millimeters"/>
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="5.0" units="Millimeters"/>
-            <max-pick-tolerance value="1.0" units="Millimeters"/>
+            <max-pick-tolerance value="2.0" units="Millimeters"/>
             <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="None" background-min-hue="0" background-max-hue="0" background-tol-hue="8" background-min-saturation="0" background-max-saturation="0" background-tol-saturation="8" background-min-value="0" background-max-value="0" background-tol-value="8" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
@@ -518,7 +755,7 @@
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
-               <calibration-tip-diameter value="0.0" units="Millimeters"/>
+               <calibration-tip-diameter value="0.30369129453423316" units="Millimeters"/>
             </calibration>
             <method-part-on>None</method-part-on>
             <part-on-check-after-pick>true</part-on-check-after-pick>
@@ -555,21 +792,54 @@
       <unsafe-Z-roaming-distance value="10.0" units="Millimeters"/>
       <pool-scripting-engines>false</pool-scripting-engines>
       <auto-load-most-recent-job>false</auto-load-most-recent-job>
-      <solutions show-indicator="true" target-milestone="Kinematics">
+      <solutions show-indicator="true" target-milestone="Advanced">
          <dismissed-solutions class="java.util.HashSet">
-            <string>99bb720e8375c9272ba65b5c6a9b9f8ac9765287</string>
-            <string>97e05b84ebaba14892e195242db3796f998b55ae</string>
-            <string>c48cc2e68f3b29aeb3ea84a6aeec372738051e74</string>
-            <string>d338c4ff6729eb296a06729eaebbb4cb5f96dfe1</string>
+            <string>6deaefc70455fb64ff310a2f311348bfdf6a69e5</string>
+            <string>c634cb68a12428cf5de79f800f023bfda73f566d</string>
+            <string>bef2537dce95f342584624673dc5f6b53051ba87</string>
             <string>12d332c9a91eaedf04b96c8c427cdc2e686c8453</string>
-            <string>461358f0c1ee3eec2d7480bdcc48abb41752b12c</string>
-            <string>5ff676ecaed8eb4307570fed651650bd84514816</string>
-            <string>980c6a806cd988b2a79f872aaa6e46b3eb01dea2</string>
             <string>5d0f78f6e03b6c8e4c394025950ba329fbc5bb17</string>
+            <string>9374f3649b45f5354b1b51f0e3ccc0e3f71cf707</string>
+            <string>d338c4ff6729eb296a06729eaebbb4cb5f96dfe1</string>
+            <string>97f93549097eb31eb256e814649c62a9ab99c8ba</string>
+            <string>6fd96fd0387bb3758283c994441eb3b491ab240c</string>
+            <string>780cc1c6179bad5f2b5ac136ed458d5870a127ef</string>
+            <string>8a72246dc412654dd2d9302e6729eafe14cbb8eb</string>
+            <string>712ca54985bb8340a8d44a543c71398f035fb62a</string>
+            <string>9d51c8285552af604d5c9afc07d67521f4fe2984</string>
+            <string>28e4644e123d2326a843638df069c68adbb9cf61</string>
+            <string>690bb35bfae8e467c6bcc403af5306d159ee79d1</string>
+            <string>5ff676ecaed8eb4307570fed651650bd84514816</string>
+            <string>ff23d69214c5ac3747d787b068ed9e908e0048be</string>
+            <string>980c6a806cd988b2a79f872aaa6e46b3eb01dea2</string>
+            <string>99bb720e8375c9272ba65b5c6a9b9f8ac9765287</string>
+            <string>c48cc2e68f3b29aeb3ea84a6aeec372738051e74</string>
+            <string>e489344e8c0be12d217089bda332980daa279af0</string>
+            <string>fc9b3c39c6506c2f0675b390cff42c25840404b9</string>
+            <string>a41e7d45fb2a5840bae63668d5c4dd9b9c956bf8</string>
+            <string>9548e8ad7793e1ca68eecbc2e2562d5114672615</string>
+            <string>461358f0c1ee3eec2d7480bdcc48abb41752b12c</string>
+            <string>4ad9a9f26f912acc17ba529d89b99971f0787a44</string>
+            <string>97e05b84ebaba14892e195242db3796f998b55ae</string>
+            <string>7eb11a551586c9aa9dc35cd19fe6920b8638b7b6</string>
+            <string>615da5eb63ae867fdd64ac3cff7926d79c598681</string>
+            <string>cba69bd8b56678f4d0053f01421d2e6eb1a1d4da</string>
+            <string>45d683296f9c8d23b6036b95696e232ca176c536</string>
+            <string>c3a49f7312780bad77cfcdf9e61d62dc662fd6d7</string>
+            <string>71e1e6f22665f79901e5f851146851c5486edbc0</string>
          </dismissed-solutions>
          <solved-solutions class="java.util.HashSet">
+            <string>4ef8782654e97aae966e1a10ae13427d0d8ae4b2</string>
+            <string>e577d392fecfbf29bc3ae54f7f6bbb1ce39c7381</string>
             <string>4cfccdb6189be00811d0ba64fcb2e25386f1eaac</string>
+            <string>bdbf9cf6afb719ace69f9407e7eadb5022fb973e</string>
+            <string>831b760f63cd9d1b93a457157a4f8c366aa0cf33</string>
+            <string>f84bff9cb1cc36d988d8674d76f1b42f407653fc</string>
+            <string>456a58737045d97a838d9f8663409417b20d5751</string>
+            <string>1a2c677abe9dfcf3eccaab8395afdad3d6248127</string>
+            <string>c15ef57f0dcd294ab89817b092cacfbdd06bac47</string>
             <string>2e23dbdbafefed5449eed917d0cbd3066fab3d39</string>
+            <string>23e53578f84b59cdc66aaecda2bd031f2905b4bf</string>
          </solved-solutions>
       </solutions>
       <visual-solutions min-symmetry="1.5" sub-sampling="8" super-sampling="4" symmetry-score="OverallVarianceVsRingVarianceSum" diagnostics-milliseconds="4000" max-camera-relative-fiducial-area-diameter="0.2" max-camera-relative-subject-diameter="0.7" zero-knowledge-displacement-ratio="0.2" zero-knowledge-displacement-mm="1.0" fiducials-minimum-Z-offset-mm="2.0" zero-knowledge-fiducial-locator-passes="3" fiducial-margin="1.1" zero-knowledge-runout-compensation-shots="2" zero-knowledge-auto-focus-depth-mm="2.0" zero-knowledge-backlash-speed="0.2" zero-knowledge-settle-time-ms="600" settle-wanted-resolution-mm="0.05" settle-acceptable-compute-time="25.0" settle-maximum-pixel-diff="8.0" settle-test-move-mm="1.0">
